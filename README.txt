@@ -6,6 +6,8 @@ application developer time
 - Support for HTTP Basic authentication (optional)
 
 
+> This framework is inspired by sinatra and express
+
 POST Example
 
 curl -d "param1=value1&username=USERNAME" http://localhost/framework/contact

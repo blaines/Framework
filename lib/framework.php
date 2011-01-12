@@ -8,8 +8,6 @@ class Framework {
 	public $routes = array();
 	public static $framework_path = "/framework";
 	
-	// protected $_req;
-	
 	public function __construct()
     {
     }
@@ -31,7 +29,7 @@ class Framework {
 		// We need to render the GET without a body (just the SAME headers as get)
 		// $this->route("HEAD",$path,$func);
 	}
-	
+		
 	function route($method,$path,$func) {
 		$this->routes[$method][$path] = $func;
 	}
