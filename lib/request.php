@@ -20,7 +20,7 @@ class Request {
 		if($func($this->params["auth"]["user"],$this->params["auth"]["pass"])) {
 			return true;
 		} else {
-			header('WWW-Authenticate: Basic realm="Test Authentication System"');
+			header('WWW-Authenticate: Basic realm="Login"');
 		    header('HTTP/1.0 401 Unauthorized');
 			return false;
 		}

@@ -30,6 +30,10 @@ class Response {
 		$this->set_headers();
 		echo $this->body;
 	}
+	function redirect($location="/") {
+		header("Cache-Control: no-cache");
+		header("Location: ".$location, TRUE, 401);
+	}
 	function set_headers() {
 		if($this->headers){
 			foreach($this->headers as $key => $val) {
